@@ -1,0 +1,175 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top:0;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.headname {
+    font-family: "Georgia", serif;
+    position: fixed;
+    left: 100px;
+    top: 50px;
+}
+
+.navigation {
+    position: fixed;
+    left: 500px;
+    top: 50px;
+}
+
+.MainContainer {
+    position: fixed;
+    top: 100px;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.bg1 {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url(coffee2.jpg);
+    background-repeat: no-repeat;
+}
+
+.bg2 {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url(coffee1.jpg);
+    background-repeat: no-repeat;
+}
+
+.ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+}
+
+
+.face {
+    background-color: white;
+    height: 400px;
+    width: 800px;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.face ul li {
+    padding: 20px;
+    display: inline-block;
+}
+
+.projects {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.projects ul {
+    margin: 0;
+    padding: 0;
+}
+
+.projects ul li {
+    display: inline-block;
+    margin: 0;
+    border: none;
+    width: 33.33%;
+    padding: 0;
+    float: left;
+
+}
+
+.projects ul .a {
+    background-color: darkcyan;
+
+}
+
+.projects ul .b {
+    background-color: darkslateblue;
+
+}
+
+.projects ul .c {
+    background-color: mediumpurple;
+
+}
+
+.hello{
+    background-color: darkslateblue;
+    height:200%;
+
+}
+
+.contact{
+    background-color: white;
+    width:100%;
+}
+
+.contact ul li{
+    display: inline-block;
+}
+
+input[type = text]{
+    width:350px;
+    box-sizing: border-box;
+    border: 2px solid darkslateblue;
+}
+
+textarea{
+    width: 350px;
+    height:200px;
+    resize:none;
+    box-sizing: border-box;
+    border: 2px solid darkslateblue;
+}
+input[type=submit] {
+    background-color:darkslateblue;
+    color: white;
+    padding: 12px ;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: darkslateblue;
+}
+
