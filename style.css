@@ -33,7 +33,7 @@
 }
 
 .coffee2 {
-    transform: translateZ(-5px) scale(6);
+    transform: translateZ(-5px) scale(8);
 }
 
 .face {
@@ -52,7 +52,6 @@
     height:600px;
     overflow-x: hidden;
     overflow-y: auto;
-    transform: translateZ(-5px) scale(6);
 }
 
 .footer{

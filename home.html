@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        .center{
+            width: 1240px;
+            margin: auto;
+        }
+
+        body, html {
+            overflow: hidden;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .parallax {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 1px;
+            position: relative;
+            top: -130px;
+        }
+
+        .parallax__group {
+            position: relative;
+            height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .group1 {
+            z-index: 3;
+        }
+
+        .group2 {
+            z-index: 5;
+        }
+
+        .group3 {
+            z-index: 4;
+        }
+
+        .group4 {
+            z-index: 5;
+        }
+
+        .header, .name, .nav {
+            height: 90px;
+        }
+
+        .header {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 6;
+        }
+
+       .name {
+            float: left;
+            font-family: "Libre Baskerville", serif;
+            color: rgb(72, 42, 122);
+            text-align: center;
+            line-height: 90px;
+            position: absolute;
+            left: 155px;
+            font-size: 24px;
+        }
+
+        .nav {
+            float: right;
+            line-height: 90px;
+            position: absolute;
+            right: 190px;
+            width: 500px;
+        }
+
+        .nav ul{
+            display: flex;
+        }
+
+        .nav ul li {
+            float: left;
+            flex: 1;
+            text-align: center;
+
+        }
+
+        .face {
+            background-color: white;
+            width: 610px;
+            height: 330px;
+            z-index: 4;
+            position: absolute;
+            top:-400px;
+            transform: translateZ(-3px) scale(4);
+        }
+
+        .face .photo {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+
+        .text {
+            position: absolute;
+            top: 20px;
+            left: 300px;
+        }
+
+        .text span{
+            display: block;
+        }
+
+        .coffee2 {
+            height:860px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transform: translateZ(-5px) scale(6);
+        }
+
+        .projects{
+            background-color: antiquewhite;
+            height:740px;
+            position: absolute;
+            top: 1950px;
+            transform: translateZ(-3px) scale(4);
+        }
+
+        .coffee1{
+            height:600px;
+            position: absolute;
+            top: 2940px;
+            transform: translateZ(-5px) scale(7);
+        }
+
+        .footer{
+            height:1240px;
+            background-color: cadetblue;
+            transform: translateZ(-3px) scale(4);
+            position: absolute;
+            top: 5240px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header center">
+    <div class="name">Migi Bell</div>
+    <div class="nav">
+        <ul>
+            <li>HOME</li>
+            <li>PORTFOLIO</li>
+            <li>ABOUT ME</li>
+            <li>CONTACT ME</li>
+        </ul>
+    </div>
+</div>
+
+<div class="parallax center">
+    <div class="group1 parallax__group">
+        <div class="parallax__layer face center">
+            <div class="photo">
+                <img src="face.jpg" alt="face" />
+            </div>
+            <div class="text">
+                <span>Migi Bell</span>
+                <span>FOOD</span>
+                <span>STYLIST.</span>
+                <span style="font-family: Arial">________</span>
+                <span>PORTFOLIO ></span>
+            </div>
+        </div>
+        <div class="parallax__layer coffee2">
+            <img src="coffee2.jpg">
+        </div>
+    </div>
+    <div class="group2 parallax__group">
+        <div class="parallax__layer projects">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+        </div>
+    </div>
+    <div class="group3 parallax__group">
+        <div class="parallax__layer coffee1">
+            <img src="coffee1.jpg">
+        </div>
+    </div>
+    <div class="group4 parallax__group">
+        <div class="parallax__layer footer">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
