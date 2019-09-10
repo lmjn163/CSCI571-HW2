@@ -1,99 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="header">
-    <ul>
-        <li class = "headname">
-            Migi Bell
-        </li>
-        <li class = navigation>
-        <nav>
-            <a  class="bright"  href=#>HOME</a>
-            <a  class="black" href=#>PORTFOLIO</a>
-            <a  class="black" href=#>ABOUT ME</a>
-            <a  class="black"  href=#>CONTACT ME</a>
-        </nav>
-        </li>
-    </ul>
+<div class="header center">
+    <div class="name">Migi Bell</div>
+    <div class="nav">
+        <ul>
+            <li style="color: rgb(72, 42, 122)">HOME</li>
+            <li>PORTFOLIO</li>
+            <li>ABOUT ME</li>
+            <li>CONTACT ME</li>
+        </ul>
+    </div>
 </div>
 
-<div class="MainContainer">
-
-    <div class="face">
-        <ul>
-            <li>
-                <img src="face.jpg" alt="face" />
-            </li>
-            <li>
-                <h3>Migi Bell</h3>
-                <h2>FOOD</h2>
-                <h1>STYLIST.</h1>
-                <h4>----</h4>
-                <p>PORTFOLIO ></p>
-            </li>
-        </ul>
-    </div>
-
-    <div class="bg1">
-
-    </div>
-
-    <div class="projects">
-        <ul>
-            <li class="a">
-                <h2>PROJECTS</h2>
-                <h1>PROJECTS ></h1>
-            </li>
-            <li class="b">
-                <h2>PROJECTS</h2>
-                <h1>EDITORIAL ></h1>
-            </li>
-            <li class="c">
-                <h2>PROJECTS</h2>
-                <h1>INNOVATIVE ></h1>
-            </li>
-        </ul>
-    </div>
-
-<!--    <div class="ContentContainer">-->
-
-        <div class="hello">
-            -Hello-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.</p>
+<div class="container center">
+    <div class="module1 scoll_module">
+        <div class="layer face center">
+            <div class="photo">
+                <img style="position:relative; top: -20px"src="face.jpg" alt="face" />
+            </div>
+            <div class="text">
+                <span style="color:rgb(72,42,122); font-family:serif;font-style:oblique;font-size: 20px;position: relative;
+                top: 5px;">Migi Bell</span>
+                <span style="position:absolute; top:30px; font-family: 'Raleway', sans-serif;color: rgb(72,42,122);
+                 font-size: 38px;">FOOD</span>
+                <span style="position: absolute; top:80px; font-family: 'Raleway-Bold',sans-serif;color:rgb(72,42,122);
+                    font-size:45px; font-weight:600 ">STYLIST.</span>
+                <span style="position: absolute; top:115px;font-family: Arial,serif;color:rgb(72,42,122);font-size:45px;font-weight: bold;
+                ">___</span>
+                <span style="position: absolute; top:207px; font-family: 'Raleway', sans-serif;color:rgb(72,42,122);
+                font-size: 20px;">PORTFOLIO&nbsp> </span>
+            </div>
         </div>
-
-        <div class="contact">
-            <ul>
-                <li>
-                    -Get In Touch-
-                    <h1>Contact Me</h1>
-                    700 Morey Francois Street, San Francisco, CA 94148 <br>
-                    info@lorem.com | Tel:123-555-1212
-                    <br><br>
-                    © 2023 by Migi Bell.
-                </li>
-                <li class="infoform">
-                    <form>
-                        <input type="text" name="name" placeholder="Name"><br>
-                        <input type="text" name="email" placeholder="Email"><br>
-                        <input type="text" name="firstname" placeholder="Phone"><br>
-                        <textarea name="message" placeholder="Type your message here..."></textarea></form>
-                    <br>
-                    <input type="submit" value="Submit">
-                    </form>
-                </li>
-            </ul>
+        <div class="layer coffee2">
+            <img src="coffee2.jpg" alt="coffee2">
         </div>
-<!--    </div>-->
-    <div class="bg2">
+    </div>
+    <div class="module2 scoll_module">
+        <div class="layer projects">
 
+                <div class="a" style="background-color: rgb(83,152,184)">
+                    <span class="firstline">PROJECTS</span>
+                    <span class="secondline">PROJECTS ></span>
+                </div>
+                <div class="b" style="background-color: rgb(72,42,122)">
+                    <span class="firstline">PROJECTS</span>
+                    <span class="secondline">EDITORIAL ></span>
+
+                </div>
+                <div class="c" style="background-color: rgb(153,108,192)">
+                    <span class="firstline">PROJECTS</span>
+                    <span class="secondline">INNOVATIVE ></span>
+
+                </div>
+        </div>
+    </div>
+    <div class="module3 scoll_module">
+        <div class="layer coffee1">
+            <img src="coffee1.jpg" alt="coffee1">
+        </div>
+    </div>
+    <div class="module4 scoll_module">
+        <div class="layer footer">
+            <div class="hello">
+                <span style="position: absolute; left:153px; top:195px;color:white; font-size:16px; font-weight:bold">- Hello -</span>
+                <span style="position: absolute; top: 245px; left:160px; color:white; font-size:44px;">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore
+                    magna aliqua.</span>
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <li>
+                        <span style="position:absolute; left:153px; top:860px; color:rgb(72,42,122); font-weight:bold; font-size:16px">- Get In Touch -</span>
+                        <Span style="position:absolute; top:900px; left:160px; color:rgb(72,42,122);font-size: 40px">Contact Me</Span>
+                        <span style="position: absolute; top:955px;left:160px; color:rgb(72,42,122);font-size: 16px;">700 Morey Francois Street, San Francisco, CA 94148 </span>
+                        <span style="position:absolute;top:980px; left:160px;color:rgb(72,42,122); font-size:16px;">info@lorem.com | Tel:123-555-1212</span>
+                        <br><br>
+                        <span style="position:absolute;top:1135px; left:160px;color:rgb(72,42,122); font-size:16px;"> © 2023 by Migi Bell.</span>
+                    </li>
+                    <li class="infoform">
+                        <form>
+                            <input style="position: absolute; top: 916px; height:34px" class="row1" type="text" name="name" placeholder="   Name"><br>
+                            <input style="position:absolute; top:958px; height:34px;"class="row2"type="text" name="email" placeholder="   Email"><br>
+                            <input style="position:absolute; top:1000px; height:34px;"class ="row3"type="text" name="firstname" placeholder="   Phone"><br>
+                            <textarea class = "row4" name="message" placeholder="   Type your message here..."></textarea>
+                        <br>
+                        <input type="submit" value="Submit" style="font-family:serif; font-style: italic; font-size:18px" >
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 </div>
 

@@ -1,146 +1,196 @@
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
+* {
+    margin:0;
+    padding:0;
+}
+
+.center{
+    width: 1240px;
+    margin: auto;
+}
+
+body, html {
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    scrollbar-width: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header, .name, .nav {
+    height: 90px;
 }
 
 .header {
-    width: 100%;
-    height: 100px;
     background-color: white;
     position: fixed;
-    top:0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
 }
 
-.header ul li {
-    display: inline-block;
+.name {
+    float: left;
+    font-family:serif;
+    font-style:oblique;
+    color: rgb(72, 42, 122);
+    text-align: center;
+    line-height: 105px;
+    position: absolute;
+    left: 155px;
+    font-size: 28px;
 }
 
-.headname {
-    font-family: "Georgia", serif;
-    position: fixed;
-    left: 100px;
-    top: 50px;
+.nav {
+    float: right;
+    line-height: 105px;
+    position: absolute;
+    right: 190px;
+    width: 500px;
 }
 
-.navigation {
-    position: fixed;
-    left: 500px;
-    top: 50px;
+.nav ul{
+    display: flex;
 }
 
-.MainContainer {
-    position: fixed;
-    top: 100px;
-    perspective: 1px;
-    transform-style: preserve-3d;
+.nav ul li {
+    float: left;
+    flex: 1;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:rgb(180,180,190);
+
+}
+
+.container {
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
-    margin: 0;
+    overflow-y: auto;
+    perspective: 1px;
+    position: relative;
+    top: -130px;
 }
 
-.bg1 {
-    display: flex;
-    flex: 1 0 auto;
+.scoll_module {
     position: relative;
-    z-index: -1;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transform: translateZ(-1px) scale(2);
-    background: url(coffee2.jpg);
-    background-repeat: no-repeat;
+    transform-style: preserve-3d;
 }
 
-.bg2 {
-    display: flex;
-    flex: 1 0 auto;
-    position: relative;
-    z-index: -1;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transform: translateZ(-1px) scale(2);
-    background: url(coffee1.jpg);
-    background-repeat: no-repeat;
+.module1 {
+    z-index: 3;
 }
 
-.ContentContainer {
-    position: relative;
-    display: block;
-    background-color: white;
-    z-index: 1;
+.module2 {
+    z-index: 5;
 }
 
+.module3 {
+    z-index: 4;
+}
+
+.module4 {
+    z-index: 5;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 .face {
     background-color: white;
-    height: 400px;
-    width: 800px;
-    padding: 10px;
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 100px;
-    position: relative;
+    width: 610px;
+    height: 330px;
+    z-index: 4;
+    position: absolute;
+    top:-400px;
+    transform: translateZ(-3px) scale(4);
 }
 
-.face ul li {
-    padding: 20px;
+.face .photo {
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    width:180px;
+    height:227px;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 50px;
+    left:255px;
+    float:left;
+}
+
+.text span{
+    display: block;
+}
+
+.coffee2 {
+    height:860px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateZ(-5px) scale(6);
+}
+
+.projects{
+    height:740px;
+    position: absolute;
+    top: 1950px;
+    transform: translateZ(-3px) scale(4);
+
+}
+
+.projects div{
     display: inline-block;
+    position:relative;
+    width: 33.333%;
+    float:left;
+    height:100%;
+}
+.projects div .firstline{
+    position:absolute;
+    top:325px;
+    left:60px;
+    font-size: 16px;
+    color:white;
+}
+.projects div .secondline{
+    position:absolute;
+    top:357px;
+    left:60px;
+    font-size:26px;
+    color:white;
+    font-family:'Raleway-Bold',sans-serif;
+    font-weight:600;
 }
 
-.projects {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 400px;
-    float: left;
-    position: relative;
-}
-
-.projects ul {
-    margin: 0;
-    padding: 0;
-}
-
-.projects ul li {
-    display: inline-block;
-    margin: 0;
-    border: none;
-    width: 33.33%;
-    padding: 0;
-    float: left;
-
-}
-
-.projects ul .a {
-    background-color: darkcyan;
-
-}
-
-.projects ul .b {
-    background-color: darkslateblue;
-
-}
-
-.projects ul .c {
-    background-color: mediumpurple;
-
+.coffee1{
+    height:500px;
+    position: absolute;
+    top: 2700px;
+    left: -500px;
+    transform: translateZ(-5px) scale(7);
 }
 
 .hello{
-    background-color: darkslateblue;
-    height:200%;
-
+    position:relative;
+    height:660px;
+    background-color: rgb(72,42,122);
 }
 
 .contact{
     background-color: white;
     width:100%;
+    height:585px;
 }
 
 .contact ul li{
@@ -148,28 +198,56 @@ body {
 }
 
 input[type = text]{
-    width:350px;
+    position:absolute;
+    left:615px;
+    width:470px;
     box-sizing: border-box;
-    border: 2px solid darkslateblue;
+    border: 1.8px solid rgb(72,42,122);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:rgb(72,42,122);
+    font-weight: 600;
 }
 
 textarea{
-    width: 350px;
-    height:200px;
+    position:absolute;
+    left:615px;
+    width: 470px;
+    height:128px;
     resize:none;
     box-sizing: border-box;
-    border: 2px solid darkslateblue;
+    border: 1.8px solid rgb(72,42,122);
+    top:1042px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(72,42,122);
+    font-weight: 600;
 }
+
 input[type=submit] {
-    background-color:darkslateblue;
+    background-color:rgb(72,42,122);
     color: white;
     padding: 12px ;
     border: none;
     cursor: pointer;
     float: right;
+    left:980px;
+    position:absolute;
+    top:1178px;
+    width:104px;
 }
 
 input[type=submit]:hover {
-    background-color: darkslateblue;
+    background-color: rgb(72,42,122);
 }
 
+.infoform{
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer{
+    height:1240px;
+    transform: translateZ(-3px) scale(4);
+    position: absolute;
+    top: 5240px;
+}
